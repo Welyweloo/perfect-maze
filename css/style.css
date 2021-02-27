@@ -1,0 +1,107 @@
+h1 {
+    color: #ff7a28;
+    text-align: center;
+}
+
+#homepage {
+    margin: auto;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.homepage-div {
+    margin: 15px;
+}
+
+label {
+    color: #ae28d3;
+}
+
+input {
+    margin: 10px;
+}
+
+#submit-button {
+    display: block;
+}
+
+
+#main {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;   
+}
+
+table {
+    border: 20px solid #ff7a28;
+}
+
+td {
+    border: 1px solid rgb(223, 219, 219);
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+}
+
+#logo {
+    display: none;
+    margin:auto;
+    width: 25px;
+}
+
+#robot {
+    display:none;
+    width: 600px;
+    margin: auto;
+}
+
+#wrong-way {
+    display: none;
+    text-align: center;
+    color: red;
+}
+
+
+button {
+    width: 200px;
+    margin: 30px auto;
+    padding: 10px;
+    display: none;
+    background-color: #ff7a28;
+    font-weight: bold;
+    border-radius: 10px;
+    border: #ff7a28;
+}
+
+button:hover {
+    background-color: white;
+    color: #ff7a28;
+    border: solid 1px #ff7a28 ;
+}
+
+#error-value {
+    display: none;
+    color:red;
+    font-weight: bold;
+}
+
+#successful {
+    display: none;
+    color:#ae28d3;
+    font-size: 20px;
+    text-align: center;
+}
+
+#rules {
+    width: 800px;
+    margin: 20px auto ;
+
+}

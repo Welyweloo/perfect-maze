@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurelie - Perfect Maze</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+</head>
+<body id="homepage">
+    <h1>Perfect Maze - Developer Test</h1>
+    <div class="homepage-div">
+        <p>Realized by Aurelie A. as a developer test for a job application.</p>
+        <a href="https://gist.github.com/id13/3f560bcfa6524ac7efc1508d33865efa#perfect-maze-definition">Check the requiments</a>
+    </div>
+
+    <form id="size-definition-form" action="maze.html" method="GET">
+        <div class="homepage-div">
+            <label for="width">Define the maze's width (amount of columns)</label><br />
+            <input id="width-element" type="number" name="width" min="2"/>
+            <small>For a better experience we advise you to choose a number between 2 and 35</small>
+        </div>
+
+        <div class="homepage-div">
+            <label for="width">Define the maze's height (amount of lines)</label><br />
+            <input id="height-element" type="number" name="height" min="2"/>
+            <small>For a better experience we advise you to choose a number between 2 and 20</small>
+        </div>
+
+        <p id="error-value"><i class="em em-x" aria-role="presentation" aria-label="CROSS MARK"></i> Be careful, both width and height must be integer values, above 2.</p>
+        <button id="submit-button" type="submit">Ready to play</button>
+    </form>
+
+    <script>
+
+        let form = document.querySelector('form');
+        form.addEventListener('submit', function(evt){
+            
+            evt.preventDefault();
+            
+            let widthValue = parseInt(document.getElementById('width-element').value);
+            let heightValue = parseInt(document.getElementById('height-element').value);
+
+            if(widthValue >= 2 && heightValue >= 2) {
+                window.location.replace("./maze.html?width=" + widthValue + "&height=" + heightValue);
+              
+            } else {
+                document.getElementById('error-value').style.display = "block";
+            }
+
+            
+        })
+    </script>
+</body>
+</html>
